@@ -5,6 +5,24 @@ Safety Filter Design for Neural Network Systems via Convex Optimization\
 Shaoru Chen*, Kong Yao Chee*, Nikolai Matni, M. Ani Hsieh, George J. Pappas (* co-first authors)\
 Conference on Decision and Control, 2023 (To appear)
 
+## Installation
+```
+conda create -n psf python=3.10
+
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 -c pytorch
+
+pip install auto-lirpa
+
+conda install -c conda-forge cvxpy
+
+pip install matplotlib
+pip install gurobipy
+pip install control
+pip install tqdm
+
+pip install Mosek
+```
+
 ## Third-party dependence
 We use [auto-LiRPA](https://github.com/Verified-Intelligence/auto_LiRPA) to extract bounds on the NN dynamics locally. Some changes have been made in order to extract the local linear bounds in [this folder](https://github.com/ShaoruChen/NN-System-PSF/tree/main/source/auto_LiRPA). 
 
