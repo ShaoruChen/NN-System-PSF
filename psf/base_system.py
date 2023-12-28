@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from base_policy import BasePolicy
+from .base_policy import BasePolicy
 
 class BaseSystem(nn.Module):
     def __init__(self, A, B, nn_residual, device, sigma_w = None, augmented_nn_input=True, with_nn=True):

@@ -4,10 +4,9 @@ import numpy as np
 import warnings
 from tqdm import tqdm
 from scipy.linalg import block_diag
-from nnv import output_Lp_bounds_LiRPA
+from .nnv import output_Lp_bounds_LiRPA
 
 cvxpy_solver = cp.MOSEK
-
 
 def nn_linear_bounds_abstraction(nn_model, x_lb, x_ub, u_lb = None, u_ub = None, method = 'backward'):
     if u_lb is None or u_ub is None:

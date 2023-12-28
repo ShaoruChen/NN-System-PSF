@@ -6,6 +6,8 @@ Shaoru Chen*, Kong Yao Chee*, Nikolai Matni, M. Ani Hsieh, George J. Pappas (* c
 Conference on Decision and Control, 2023 (To appear)
 
 ## Installation
+Create a conda environment using the following recommended options: 
+
 ```
 conda create -n psf python=3.10
 
@@ -15,16 +17,17 @@ pip install auto-lirpa
 
 conda install -c conda-forge cvxpy
 
-pip install matplotlib
-pip install gurobipy
-pip install control
-pip install tqdm
-
-pip install Mosek
+pip install -r requirements.txt
 ```
 
+The [Mosek](https://www.mosek.com/products/academic-licenses/) optimizer is applied and can be installed by 
+```
+pip install Mosek
+```
+Other optimizers for solving the convex program can be used too. 
+
 ## Third-party dependence
-We use [auto-LiRPA](https://github.com/Verified-Intelligence/auto_LiRPA) to extract bounds on the NN dynamics locally. Some changes have been made in order to extract the local linear bounds in [this folder](https://github.com/ShaoruChen/NN-System-PSF/tree/main/source/auto_LiRPA). 
+We use [auto-LiRPA](https://github.com/Verified-Intelligence/auto_LiRPA) to extract bounds on the NN dynamics locally. 
 
 We use [pympc](https://github.com/TobiaMarcucci/pympc/tree/master) mainly for operations on polyhedra.
 
