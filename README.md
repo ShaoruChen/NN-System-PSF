@@ -26,6 +26,9 @@ pip install Mosek
 ```
 Other optimizers for solving the convex program can be used too. 
 
+An example of applying the predictive safety filter on a pendulum system is given by running `python main.py`. Run `python compare_plots.py` to recover the figures in the [paper](https://arxiv.org/pdf/2308.08086.pdf).
+
+
 ## Third-party dependence
 We use [auto-LiRPA](https://github.com/Verified-Intelligence/auto_LiRPA) to extract bounds on the NN dynamics locally. 
 
