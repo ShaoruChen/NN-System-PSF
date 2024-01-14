@@ -7,12 +7,15 @@ Conference on Decision and Control, 2023
 
 
 ## Installation
-Create a conda environment using the following recommended options: 
+The following installation has been verified. To run codes on GPU, please install pytorch with cuda enabled. 
 
 ```
 conda create -n psf python=3.10
 conda activate psf
+
+# Example: install pytorch on macOS. 
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 -c pytorch
+
 pip install auto-lirpa
 conda install -c conda-forge cvxpy
 pip install -r requirements.txt
